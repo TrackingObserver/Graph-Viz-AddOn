@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*
+ * Styles for the non-graph parts of the page.
+ */
+
+/* Global Styles */
+body {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+header, #trackerCategoryInfo {
+	background-color: rgba(32, 32, 31, 0.9);
+}
+
+/* Header Styles */
+header {
+	border-bottom: 0.5em solid rgb(196, 194, 23);
+	color: rgb(226, 226, 228);
+	
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+.column {
+	display: table-cell;
+	padding: 0.75em;
+	vertical-align: middle;
+}
+
+#descriptiveText {
+	text-align: left;
+	width: 50%;
+}
+
+#trackerCategoryInfoHeader {
+	text-align: right;
+}
+#trackerCategoryInfoHeader a {
+	color: inherit;
+	display: inline-block;
+	text-decoration: none;
+}
+#trackerCategoryInfoHeader a:after {
+	content: " ▼";
+	font-size: 0.25em;
+}
+#trackerCategoryInfoHeader a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#trackerCategoryInfoContainer {
+	display: none; /* hide by default */
+	position: absolute;
+}
+#trackerCategoryInfo {
+	border-radius: 0.5em;
+	padding: 1em;
+	position: relative;
+}
+#trackerCategoryInfoContainer:before {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+
+	border: 0.5em solid transparent;
+	border-bottom-color: rgba(32, 32, 31, 0.9);
+	
+		top: 0;
+	left: 50%;
+}
+#trackerCategoryInfoContainer.showing {
+	display: block;
+}
+
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 0.75em;
+}

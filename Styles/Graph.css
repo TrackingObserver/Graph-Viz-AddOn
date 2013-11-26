@@ -1,0 +1,58 @@
+/*
+ * Styles for the graph parts of the page.
+ */
+
+#viewport {
+	background-color: rgb(226, 226, 228);
+}
+
+.testElement {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+}
+
+/* SVG Styles */
+g {
+	fill: none;
+}
+
+.node path, .edge {
+	stroke: gray;
+	stroke-width: 0.1em;
+}
+/* the circle, square, or triangle shapes that represent each node */
+.node path {
+	fill: white;
+}
+
+.label {
+	display: none;
+	fill: rgb(32, 32, 31);
+}
+.label text {
+	fill: white;
+	font-size: 1em;
+}
+
+.node.highlighted path {
+	fill: yellow;
+}
+.node.highlighted .label {
+	display: block;
+}
+
+.node.dimmed path {
+	fill: gray;
+}
+.node.dimmed image {
+	filter: url("Filters.svg#desaturate");
+}
+
+.edge.highlighted {
+	stroke: yellow;
+}
+.edge.dimmed {
+	stroke: gray;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>TrackingObserver: Graph View</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="Styles/Main.css">
+		<link rel="stylesheet" type="text/css" href="Styles/Graph.css">
+		
+		<script src="Scripts/d3.v2.min.js"></script>
+		<script src="Scripts/Graph.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1 class="column">
+				TrackingObserver
+			</h1>
+			
+			<p id="descriptiveText" class="column">
+				TrackingObserver shows the different sites that track you while
+				you browse the web. Sites that you visit directly are in
+				circles. Sites that you haven't visited but that track you are
+				in squares. Sites that you visit directly <em>and</em> that
+				track you are in triangles.
+			</p>
+			
+			<div class="column">
+				<!--			<a href="../RawData/RawData.html" style="color: white">View raw data</a>-->
+				<p>
+				<label><input type="checkbox" id="showFaviconsCheckbox">Show site favicons</label>
+			</div>
+			
+			<!--<div class="column">
+				<h2 id="trackerCategoryInfoHeader">
+					<a href="#">Tracker Category Info</a>
+				</h2>
+				<div id="trackerCategoryInfoContainer">
+					<dl id="trackerCategoryInfo">
+						<dt>Category A</dt>
+						<dd>
+							Tracks you only on a given site, and reports data back to a
+							third party (e.g., Google Analytics).
+						</dd>
+						
+						<dt>Category B</dt>
+						<dd>
+							Tracks you across sites, but you never visit the tracker's
+							site directly (e.g., DoubleClick).
+						</dd>
+						
+						<dt>Category C</dt>
+						<dd>
+							Tracks you across sites, and forces you to visit directly
+							(e.g., via a popup).
+						</dd>
+						
+						<dt>Category D</dt>
+						<dd>
+							Tracks you across sites, but does not need its own
+							client-side state (gets identifiers leaked to it).
+						</dd>
+						
+						<dt>Category E</dt>
+						<dd>
+							Tracks you across sites, and you sometimes visit the 
+							tracker's site directly (e.g., Facebook).
+						</dd>
+					</dl>
+				</div>
+			</div>-->
+		</header>
+		
+		<div id="viewport"></div>
+		
+		<div id="log"></div>
+	</body>
+</html>

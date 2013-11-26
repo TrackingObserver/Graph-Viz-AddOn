@@ -1,0 +1,19 @@
+{
+	"name": "TrackingObserver Add-On: Graph",
+	"version": "0.1",
+	"manifest_version": 2,
+	
+	"description": "Add-on to TrackingObserver that graphs trackers.",
+	
+	"permissions": [
+        "http://*/",
+        "background"
+	],
+    
+    
+    
+    "background": {
+		"scripts": ["Background.js"],
+		"persistent": true
+	}
+}
